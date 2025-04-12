@@ -3,4 +3,104 @@ body {
          and use the OS’s UI font as the website font
        */
     font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    display: block;
+    margin: 8px;
+    margin-inline: auto;
+    padding: 2px;
   }
+
+  ul, li {
+    display: contents;
+  }
+
+  nav {
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+  }
+  nav a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding-bottom: 0.5em;
+        
+  }
+  .current {
+      border-bottom-width: .4em;
+      border-bottom-style: solid;
+      border-bottom-color: oklch(80% 3% 200);
+  }
+
+  html {
+    --color-accent: #1e90ff;
+  }
+
+  nav a:hover {
+    border-bottom-width: .4em;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-accent);
+    background-color: #d9eafa;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em
+  }
+  form label {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
+  
+  form button {
+    display: grid;
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+}
+
+.projects article {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-row: span 3;
+  gap: 1em;
+}
+
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+hr {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+section article h3 {
+  margin-top: 2em;
+}
+
+article time, article .present {
+  font-size: 110%;
+}
+
+header p {
+  font-size: 120%;
+}

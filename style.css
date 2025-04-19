@@ -15,11 +15,12 @@ body {
   }
 
   nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
     margin-bottom: 1.5rem;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: var(--border-color);
   }
   nav a {
     flex: 1;
@@ -32,10 +33,11 @@ body {
   .current {
       border-bottom-width: .4em;
       border-bottom-style: solid;
-      border-bottom-color: oklch(80% 3% 200);
+      border-bottom-color: var(--border-color);
   }
 
   html {
+    color-scheme: light dark;
     --color-accent: #1e90ff;
   }
 
@@ -43,7 +45,7 @@ body {
     border-bottom-width: .4em;
     border-bottom-style: solid;
     border-bottom-color: var(--color-accent);
-    background-color: #d9eafa;
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
   }
 
   form {
@@ -103,4 +105,10 @@ article time, article .present {
 
 header p {
   font-size: 120%;
+}
+
+label.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }

@@ -77,8 +77,12 @@ body {
   gap: 1em;
 }
 
-h2 {
+/* h2 {
   margin: 0;
+} */
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h1 {
@@ -111,4 +115,29 @@ label.color-scheme {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  margin-top: 20px;
+}
+
+#profile-stats dt {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: gray;
+  grid-row: 1;
+}
+
+#profile-stats dd {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0; /* Removes weird default margins */
+  grid-row: 2;
+}
+
+#profile-stats {
+  margin-bottom: 50px;
 }

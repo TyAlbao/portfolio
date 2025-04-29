@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project 2 Report</title>
+    <style>
+      :root {
+        --color-neutral-95: hsl(220 10% 95%);
+        --color-neutral-90: hsl(220 10% 90%);
+        --color-neutral-80: hsl(220 10% 80%);
+        --color-neutral-70: hsl(220 10% 70%);
+        --color-neutral-60: hsl(220 10% 60%);
+        --color-neutral-50: hsl(220 10% 50%);
+        --color-neutral-40: hsl(220 10% 40%);
+        --color-neutral-30: hsl(220 10% 30%);
+        --color-neutral-20: hsl(220 10% 20%);
+        --color-neutral-10: hsl(220 10% 10%);
+      }
+
+      html {
+        font: 100%/1.5 system-ui;
+        counter-reset: figure;
+        background: var(--color-neutral-95);
+        max-width: min(75vw, 80em);
+        margin: 0 auto;
+      }
+
+      /* Headings */
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        line-height: 1.1;
+        font-weight: 600;
+        text-wrap: balance;
+      }
+
+      h1,
+      h2 {
+        border-bottom: 1px solid var(--color-neutral-80);
+        padding-bottom: 0.2em;
+      }
+
+      h1 {
+        margin-block: 1em 0.5rem;
+        font-size: clamp(2.5em, 150% + 2vh + 2vw, 10vmin);
+        font-weight: 800;
+
+        small {
+          display: block;
+          width: fit-content;
+          padding: 0.2em 0.5em;
+          margin-inline: auto;
+          color: white;
+          background: var(--color-neutral-40);
+          font-size: 40%;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+      }
+
+      h2 {
+        font-size: 180%;
+        color: var(--color-neutral-30);
+      }
+
+      h3 {
+        font-size: 130%;
+      }
+
+      /* Lists */
+
+      ul,
+      ol {
+        padding-inline-start: 2em;
+      }
+
+      li {
+        &::marker {
+          color: var(--color-neutral-40);
+        }
+
+        + li {
+          margin-top: 0.2em;
+        }
+      }
+
+      /* Sectioning elements */
+
+      header {
+        padding-block: 1em;
+        text-align: center;
+      }
+
+      main {
+        background: white;
+        color: var(--color-neutral-20);
+        border-radius: 1rem;
+        padding: 0.1rem 2rem;
+      }
+
+      /* Figures */
+
+      figure {
+        margin: 1em 0;
+        padding: 0.5rem;
+        margin-inline: -0.5em;
+        border: 1px solid var(--color-neutral-80);
+        box-shadow: 0 0.1em 0.2em var(--color-neutral-95);
+        text-align: center;
+        background: white;
+
+        > figcaption {
+          font: 500 75% var(--font-sans);
+          background: var(--color-neutral-95);
+          padding: 0.5rem;
+          margin: -0.5rem;
+          margin-top: 0.5rem;
+          counter-increment: figure;
+          text-align: left;
+
+          &::before {
+            content: 'Figure ' counter(figure) ': ';
+            font-weight: bold;
+            color: var(--color-neutral-40);
+          }
+
+          a:not(:hover, :focus, :active) {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: color-mix(
+              in lab,
+              currentColor,
+              transparent 70%
+            );
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <small>Assignment 4</small>
+        Persuasive or Deceptive Visualization?
+      </h1>
+
+      <p><strong>Ty Albao</strong> — <em>talbao@ucsd.edu</em></p>
+    </header>
+
+    <main>
+      <h2>Proposition: There is an excessive number of abortions in the United States</h2>
+
+      <section>
+        <h3>FOR the Proposition</h3>
+
+        <figure>
+          <img src="log.png" alt="" />
+          <figcaption>Map of U.S. states showing excessive abortion numbers across the nation.</figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+
+        <ul>
+          <li>
+            <i>Aggresive title</i>, <b>score: -0.5</b>. The title immediately conveys the tone of the visualization and what the intented message is.
+            I think this title works well since it is simple, not too complicated, yet feels powerful and grabs the reader's attention.
+            I chose this title because one of the biggest arguments against abortion is that it should be considered murder, so I decided to
+            lean into that narrative. It's obviously trying to persuade, but it doesn't do anything too deceptive.
+          <li>
+            <i>Use of red color scheme</i>, <b>score: -0.5</b>. Pairing red with the murder-themed title was intented to make the reader imagine much
+            death across the nation, to emphasize the harm abortions are doing. Even though this isn't skewing any data, it's still attempting
+            to bring some kind of reaction out of the reader.
+          </li>
+          <li>
+            <i>Logged scales</i>, <b>score: -2</b>. This is arguably the most deceptive design in the entire visualization. The total number of abortions
+            in each state were scaled logarithmically which compresses the extremely large values down to the level of the low to average values.
+            This makes the data seem much less spread out, even though there are only a states values truly dominate the leaderboard. The logged
+            scaling was done to show the reader that abortions are prevelant in almost all 50 U.S. states, "proving" to be a serious cause of concern.
+          </li>
+          <li>
+            <i>Altered color bar title and tickmarks</i>, <b>score: -2</b>. This design is almost just as deceptive as the one aboves as it hides the fact that
+            these values were put through a logarithmic function and yet makes it seem like the states are colored using the absolute abortion numbers.
+            The design here is incredibly deceptive and was done to make it appear as though most states havehundreds of thousands of abortions
+            when in reality, that simply isn't true.
+          </li>
+          <li>
+            <i>Unmentioned aggregation of Maryland and Washington D.C. data</i>, <b>score: -1.5</b>. This was only so the data could be mapped correctly
+            since Washington D.C. is not able to be shown on Plotly's choropleth maps, however it also has bigger implications, since it is explicitly
+            pointed out in the annotations. The D.C. capitol has an alarming number of abortions, so even when combined with Maryland's abortion data,
+            it's still an outlier in terms of it's number of abortions considering its size. This was done to try to convince the reader that smaller
+            states also have higher abortion numbers. Additionally, it should be pointed out that the annotation says 86th percentile which still hides
+            the absolute number of abortions since it's the 86th percentile of log-scaled values, making it appear more extreme than it really is.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>AGAINST the Proposition</h3>
+
+        <figure>
+          <img src="absolute.png" alt="" width = 1100/>
+          <figcaption>Map of U.S. states showing unequal distribution in abortions numbers across the nation.</figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+
+        <ul>
+          <li>
+            <i>Use of green color scheme</i>, <b>score: 1.5</b>. I think the color selection here is somewhat neutral, compared to other design decisions.
+            The idea was to avoid evoking a sense of warning or alert that there is a problem, contrasting the opposing visualization. I don't
+            think it's necessarily deceptive, but I can't say it's completely earnest as there were persuasive intentions involved.
+          </li>
+          <li>
+            <i>Unmentioned aggregation of Maryland and Washington D.C. data</i>, <b>score: 1</b>. This was only done so the data could be mapped correctly
+            since Washington D.C. is not able to be shown on Plotly's choropleth maps. This didn't have much of an impact on the visualization, but it
+            was never mentioned to the reader, so I think a 1 is fair. 
+          </li>
+          <li>
+            <i>Top 5 states annotations</i>, <b>score: 1.5</b>. There is no real deception taking place here, since those percentages are completely correct,
+            however the fact that it is being explicitly pointed out to the reader, implies persuasive motives exist. The most persuasive part was the
+            text box stating that the top 5 states make up close to 50% of all abortions. While true, its aim was to suggest to the reader that the
+            abortion problem isn't nationwide, but only in a few states. This worked well as the lines, marks, and annotations came out cleanly, effectively
+            communicating the corresponding storyline. The only issue was that in the Plotly figure, if I panned around the image, the annotations stay
+            stuck in place and don't move with the map. Since the image above is static, however, this isn't much of an issue.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Final Reflection</h2>
+
+        <p>
+          The overall process was much more complicated than anticipated which is surprising considering I felt the same way about Project 1. It's really easy
+          to underestimate how difficult the process is when you see previous examples. Seeing past visualizations makes the task seem much easier because
+          once you see it all put together, the takeaway appears obvious. In reality, however, when starting this project and having multiple columns to choose
+          from to make contrasting visualizations, the number of possibilities can be overwhelming.
+          <br>
+          I thought that making a map would be the most effective strategy seeing that all the data was grouped based on a state level, but the hard part was
+          choosing which metric(s) to use and how to make the same column of data argue against itself. Total number of abortions made the most sense since it
+          was an easy metric to conceptualize and it was one of the few columns in which no states had missing values for. Making the less-deceptive map was
+          pretty straightforward, but making the deceptive one was much harder. It surprisingly took me a while to think of using the logged values for the
+          number of abortions, but once I calculated those values, it was pretty easy from there. The most time consuming designs were making the style look
+          nice and adding tedious annotations, but in the end, it was definitely worth it.
+          <br>
+          I would define ethical analysis as making your visualization clear so that someone who isn't data literate doesn't have to think about any hidden tricks
+          being used. This means not scaling the data in a confusing way and/or scaling without informing the reader, ensuring all axes follow the average reader's
+          intuition, and making the visualization look easy on the eyes, so the reader doesn't have to do a lot of cognitive work. I think there is a major difference
+          between being persuasive and being deceptive. I'm all for adding color, forming creative titles, and pointing out interesting observations from the data, but
+          the line is drawn at skewing data and intentionally misinforming readers for the sake of leading them on to a specific narrative.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

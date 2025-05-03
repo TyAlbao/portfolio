@@ -10,9 +10,9 @@ body {
     padding: 2px;
   }
 
-  ul, li {
+  /* ul, li {
     display: contents;
-  }
+  } */
 
   nav {
     --border-color: oklch(50% 10% 200 / 40%);
@@ -140,4 +140,75 @@ label.color-scheme {
 
 #profile-stats {
   margin-bottom: 50px;
+}
+
+.project-year {
+  font-size: 1em;
+  color: gray;
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin: 2em auto;
+  max-width: 1000px;
+}
+
+#projects-pie-plot {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.legend {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 0.5em 1em;
+  /* margin: 0.5em; */
+  /* width: 1000px; */
+  align-items: center;
+  padding: 1em;
+  border: 1px solid lightgray;
+  border-radius: 19px;
+  list-style: none;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.95em;
+}
+
+.swatch {
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+#projects-pie-plot path {
+  transition: opacity 300ms ease;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+#projects-pie-plot path.selected {
+  fill: var(--color) !important;
+}
+
+.legend-item.selected .swatch {
+  background-color: var(--color) !important;
 }

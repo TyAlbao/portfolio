@@ -1,5 +1,11 @@
 [
     {
+        "title": "MLB Automatic Ball-Strike System Helper",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Cleaned and analyzed LoL data and used a random forest classifier to predict the positions players used."
+    },
+    {
         "title": "League of Legends Position Classification",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
@@ -28,47 +34,6 @@
         "year": "2020",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Created dynamic leaderboard that updated leaderboard rankings by linking multiple separate Google Sheet workbooks to one master workbook."
-    },
-    {
-        "title": "Quibusdam voluptatem numquam commodi!",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Consequatur, delectus dolore fugit minus sit eum dolorum, voluptate ad unde inventore perferendis tenetur omnis voluptatum, laborum neque autem! Modi aliquid aperiam nostrum fuga. Magni reiciendis distinctio provident omnis dolores!"
-    },
-    {
-        "title": "Ex, animi. Fugiat, nisi!",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Accusamus, quisquam adipisci. Dolorum, quod, labore enim accusantium aut ut culpa aperiam ipsam quo natus commodi qui pariatur excepturi mollitia odio! Impedit ipsa sed aperiam sequi a ullam esse vitae."
-    },
-    {
-        "title": "Saepe recusandae autem ea.",
-        "year": "1971",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Fugiat, iure commodi? Laudantium tenetur eos quis. Consequuntur error sit dolorem dignissimos ipsa modi temporibus vel aperiam nostrum tenetur maxime ratione facilis repellendus similique, fugit quo aliquam qui distinctio illo?"
-    },
-    {
-        "title": "Laborum nisi deleniti consequatur?",
-        "year": "1970",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quas at aut tempora inventore reprehenderit possimus nihil dolore mollitia doloribus! Pariatur amet soluta nemo, voluptates facilis laudantium, architecto aliquid ab iure dolore quo aliquam dolorum, eligendi unde minus excepturi!"
-    },
-    {
-        "title": "Dignissimos et numquam sequi.",
-        "year": "2004",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Reprehenderit quis fugit hic itaque voluptatem! Adipisci accusantium ut cum architecto, praesentium debitis suscipit nobis deserunt, eius illum velit quod iure quisquam corporis necessitatibus neque quibusdam. Velit libero ut qui!"
-    },
-    {
-        "title": "Voluptatum illo repellendus laudantium!",
-        "year": "2005",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Repellat ratione ipsum dolore ullam quod non perspiciatis commodi debitis, voluptatem officiis omnis quia sint saepe iste vero. Omnis commodi asperiores odio nesciunt praesentium expedita quas maxime facere quasi ea."
-    },
-    {
-        "title": "Ipsum earum perspiciatis maiores.",
-        "year": "2002",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Voluptate eius illum dolore. Doloremque tempora ut cum, possimus eum esse eos quas nemo facere vel sunt culpa quia ratione impedit quae fuga sint minima consequatur ad nulla, modi consequuntur."
     }
+    
 ]

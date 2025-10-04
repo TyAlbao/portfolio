@@ -2,8 +2,14 @@
     {
         "title": "MLB Automatic Ball-Strike System Helper",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "image": "../images/abs.avif",
         "description": "Cleaned and analyzed LoL data and used a random forest classifier to predict the positions players used."
+    },
+    {
+        "title": "SMT Data Challenge",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Coming soon..."
     },
     {
         "title": "League of Legends Position Classification",

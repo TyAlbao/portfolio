@@ -25,8 +25,8 @@ let pages = [
 let nav = document.createElement('nav');
 document.body.prepend(nav)
     
-    const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-    ? "/"                  // Local server
+    const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "tyism.com")
+    ? "/"                  // Local server or custom domain
     : "/portfolio/";         // GitHub Pages repo name
 
 for (let p of pages) {

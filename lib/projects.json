@@ -3,19 +3,25 @@
         "title": "MLB Automatic Ball-Strike System Helper",
         "year": "2025",
         "image": "../images/abs.avif",
-        "description": "Cleaned and analyzed LoL data and used a random forest classifier to predict the positions players used."
+        "description": "Model created to assist teams and players in analytical decision making with MLB's ABS Challenge System.",
+        "github": "https://github.com/TyAlbao/abs-challenge-demo",
+        "demo": "https://abs-challenge-demo.streamlit.app/"
     },
     {
         "title": "SMT Data Challenge",
         "year": "2025",
         "image": "../images/smt.jpg",
-        "description": "Coming soon..."
+        "description": "Coming soon...",
+        "github": "https://github.com/TyAlbao/smt-data-challenge-2025"
     },
     {
         "title": "League of Legends Position Classification",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Cleaned and analyzed LoL data and used a random forest classifier to predict the positions players used."
+        "description": "Cleaned and analyzed LoL data and used a random forest classifier to predict the positions players used.",
+        "github": "https://github.com/TyAlbao/lol-position-classification",
+        "demo": "https://tyalbao.github.io/lol-position-classification/"
+        
     },
     {
         "title": "Visualizing San Diego MTS Bus Routes",

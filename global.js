@@ -110,14 +110,23 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   
     projects.forEach(project => {
       const article = document.createElement('article');
-  
+
+      const titleHTML = project.github
+        ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer">${project.title}</a>`
+        : `${project.title}`;
+
+      const demoHTML = project.demo
+        ? `<p><a class="demo-link" href="${project.demo}" target="_blank" rel="noopener noreferrer">Live demo</a></p>`
+        : '';
+
       article.innerHTML = `
-        <${headingLevel}>${project.title}</${headingLevel}>
+        <${headingLevel}>${titleHTML}</${headingLevel}>
         <img src="${project.image}" alt="${project.title}">
         <p>${project.description}</p>
+        ${demoHTML}
         <div class = "project-year">${project.year}</div>
       `;
-  
+
       containerElement.appendChild(article);
     });
   }

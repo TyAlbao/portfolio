@@ -5,7 +5,7 @@
         "image": "../images/abs.avif",
         "description": "Model created to assist teams and players in analytical decision making with MLB's ABS Challenge System.",
         "github": "https://github.com/TyAlbao/abs-challenge-demo",
-        "website": "https://medium.com/@tritonball",
+        "writeup": "https://medium.com/@tritonball",
         "demo": "https://abs-challenge-demo.streamlit.app/"
     },
     {
@@ -13,7 +13,8 @@
         "year": "2025",
         "image": "../images/smt.jpg",
         "description": "Coming soon...",
-        "github": "https://github.com/TyAlbao/smt-data-challenge-2025"
+        "github": "https://github.com/TyAlbao/smt-data-challenge-2025",
+        "writeup": "../lib/Team199 Paper.pdf"
     },
     {
         "title": "League of Legends Position Classification",
@@ -21,7 +22,7 @@
         "image": "../images/lol.jpg",
         "description": "Cleaned and analyzed LoL data and used a random forest classifier to predict the positions players used.",
         "github": "https://github.com/TyAlbao/lol-position-classification",
-        "website": "https://tyalbao.github.io/lol-position-classification/"
+        "writeup": "https://tyalbao.github.io/lol-position-classification/"
         
     },
     {

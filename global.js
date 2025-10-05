@@ -118,11 +118,11 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         : `${project.title}`;
 
       const demoHTML = project.demo
-        ? `<a class="demo-link" href="${project.demo}" target="_blank" rel="noopener noreferrer">Live demo</a>`
+        ? `<a class="demo-link" href="${project.demo}" target="_blank" rel="noopener noreferrer">Demo ⏯️</a>`
         : '';
 
       const websiteHTML = project.website
-        ? `<a class="website-link" href="${project.website}" target="_blank" rel="noopener noreferrer">Website</a>`
+        ? `<a class="website-link" href="${project.website}" target="_blank" rel="noopener noreferrer">Writeup 📝</a>`
         : '';
 
       let imageSrc = project.image;

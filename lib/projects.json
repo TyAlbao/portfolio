@@ -17,35 +17,18 @@
     {
         "title": "League of Legends Position Classification",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "image": "../images/lol.jpg",
         "description": "Cleaned and analyzed LoL data and used a random forest classifier to predict the positions players used.",
         "github": "https://github.com/TyAlbao/lol-position-classification",
         "demo": "https://tyalbao.github.io/lol-position-classification/"
         
     },
     {
-        "title": "Visualizing San Diego MTS Bus Routes",
+        "title": "Shoot Yo' Shot",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Used Pandas dataframe manipulation skills to logisitically map out San Diego bus routes."
-    },
-    {
-        "title": "Taylor Swift Lyrical Analysis",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Analyzed Taylor Swift's lyrics and created model to recommend her songs based on similar songs from other artists."
-    },
-    {
-        "title": "Meteorite Statistical Testing",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Performed permutation and hypothesis testing to see the significance of meteorite landing spots across the globe."
-    },
-    {
-        "title": "Retro Bowl Leaderboard",
-        "year": "2020",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Created dynamic leaderboard that updated leaderboard rankings by linking multiple separate Google Sheet workbooks to one master workbook."
+        "image": "../images/shaq.avif",
+        "description": "Basketball free throw shot analyzer to let users learn their player archetype.",
+        "github": "https://github.com/TheBoyRoy05/ShootYoShot",
+        "demo": "https://theboyroy05.github.io/ShootYoShot/"
     }
-    
 ]

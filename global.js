@@ -117,12 +117,27 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer">${project.title}</a>`
         : `${project.title}`;
 
-      const demoHTML = project.demo
-        ? `<a class="demo-link" href="${project.demo}" target="_blank" rel="noopener noreferrer">Demo ⏯️</a>`
+      // Normalize local website/demo URLs to BASE_PATH so they work on all pages
+      let websiteHref = project.website;
+      if (websiteHref && !/^https?:\/\//.test(websiteHref)) {
+        if (websiteHref.startsWith('../')) websiteHref = BASE_PATH + websiteHref.slice(3);
+        else if (websiteHref.startsWith('./')) websiteHref = BASE_PATH + websiteHref.slice(2);
+        else websiteHref = BASE_PATH + websiteHref;
+      }
+
+      let demoHref = project.demo;
+      if (demoHref && !/^https?:\/\//.test(demoHref)) {
+        if (demoHref.startsWith('../')) demoHref = BASE_PATH + demoHref.slice(3);
+        else if (demoHref.startsWith('./')) demoHref = BASE_PATH + demoHref.slice(2);
+        else demoHref = BASE_PATH + demoHref;
+      }
+
+      const demoHTML = demoHref
+        ? `<a class="demo-link" href="${demoHref}" target="_blank" rel="noopener noreferrer">Demo ⏯️</a>`
         : '';
 
-      const websiteHTML = project.website
-        ? `<a class="website-link" href="${project.website}" target="_blank" rel="noopener noreferrer">Writeup 📝</a>`
+      const websiteHTML = websiteHref
+        ? `<a class="website-link" href="${websiteHref}" target="_blank" rel="noopener noreferrer">Writeup 📝</a>`
         : '';
 
       let imageSrc = project.image;

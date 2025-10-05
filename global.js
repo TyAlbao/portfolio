@@ -119,9 +119,20 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         ? `<p><a class="demo-link" href="${project.demo}" target="_blank" rel="noopener noreferrer">Live demo</a></p>`
         : '';
 
+      let imageSrc = project.image;
+      if (imageSrc && !/^https?:\/\//.test(imageSrc)) {
+        if (imageSrc.startsWith('../images/')) {
+          imageSrc = BASE_PATH + 'images/' + imageSrc.slice('../images/'.length);
+        } else if (imageSrc.startsWith('images/')) {
+          imageSrc = BASE_PATH + imageSrc;
+        } else if (imageSrc.startsWith('./images/')) {
+          imageSrc = BASE_PATH + imageSrc.slice(2);
+        }
+      }
+
       article.innerHTML = `
         <${headingLevel}>${titleHTML}</${headingLevel}>
-        <img src="${project.image}" alt="${project.title}">
+        <img src="${imageSrc}" alt="${project.title}">
         <p>${project.description}</p>
         ${demoHTML}
         <div class = "project-year">${project.year}</div>

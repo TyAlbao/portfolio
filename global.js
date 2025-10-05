@@ -45,8 +45,9 @@ for (let p of pages) {
         a.host === location.host && a.pathname === location.pathname,
     );
     
-    if (a.host !== location.host) {
+    if (a.host !== location.host || a.pathname.endsWith('.pdf')) {
         a.target = "_blank";
+        a.rel = "noopener noreferrer";
       }
 }
 
@@ -116,7 +117,11 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         : `${project.title}`;
 
       const demoHTML = project.demo
-        ? `<p><a class="demo-link" href="${project.demo}" target="_blank" rel="noopener noreferrer">Live demo</a></p>`
+        ? `<a class="demo-link" href="${project.demo}" target="_blank" rel="noopener noreferrer">Live demo</a>`
+        : '';
+
+      const websiteHTML = project.website
+        ? `<a class="website-link" href="${project.website}" target="_blank" rel="noopener noreferrer">Website</a>`
         : '';
 
       let imageSrc = project.image;
@@ -133,8 +138,8 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
       article.innerHTML = `
         <${headingLevel}>${titleHTML}</${headingLevel}>
         <img src="${imageSrc}" alt="${project.title}">
+        <div class="project-links">${[websiteHTML, demoHTML].filter(Boolean).join(' • ')}</div>
         <p>${project.description}</p>
-        ${demoHTML}
         <div class = "project-year">${project.year}</div>
       `;
 

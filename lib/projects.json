@@ -5,6 +5,7 @@
         "image": "../images/abs.avif",
         "description": "Model created to assist teams and players in analytical decision making with MLB's ABS Challenge System.",
         "github": "https://github.com/TyAlbao/abs-challenge-demo",
+        "website": "https://medium.com/@tritonball",
         "demo": "https://abs-challenge-demo.streamlit.app/"
     },
     {
@@ -20,7 +21,7 @@
         "image": "../images/lol.jpg",
         "description": "Cleaned and analyzed LoL data and used a random forest classifier to predict the positions players used.",
         "github": "https://github.com/TyAlbao/lol-position-classification",
-        "demo": "https://tyalbao.github.io/lol-position-classification/"
+        "website": "https://tyalbao.github.io/lol-position-classification/"
         
     },
     {

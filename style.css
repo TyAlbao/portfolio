@@ -74,7 +74,7 @@ body {
   display: grid;
   grid-template-columns: subgrid;
   grid-row: span 3;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .projects article img {
@@ -82,6 +82,23 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.projects .project-links {
+  display: flex;
+  gap: 0.75em;
+  align-items: center;
+  margin-top: -0.25em;
+}
+
+.projects .project-links a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.projects .project-links a:hover {
+  text-decoration: underline;
 }
 
 /* h2 {

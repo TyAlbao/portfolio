@@ -16,7 +16,8 @@ let pages = [
     {url: '', title: 'Home'},
     {url: 'projects/', title: 'Projects'},
     {url: 'lib/resume.pdf', title: 'Resume'},
-    {url: 'https://github.com/TyAlbao', title: 'Github'}
+    {url: 'https://github.com/TyAlbao', title: 'Github'},
+    {url: 'http://www.linkedin.com/in/ty-albao', title: 'LinkedIn'}
     // {url: 'contact/', title: 'Contact'},
     // {url: 'meta/', title: 'Meta'}
 ]

@@ -13,7 +13,8 @@
         "year": "2025",
         "image": "../images/smt.jpg",
         "description": "Coming soon...",
-        "github": "https://github.com/TyAlbao/smt-data-challenge-2025"
+        "github": "https://github.com/TyAlbao/smt-data-challenge-2025",
+        "website": "../lib/smt-2025-writeup.pdf"
     },
     {
         "title": "League of Legends Position Classification",

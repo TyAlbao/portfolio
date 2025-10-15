@@ -5,7 +5,7 @@
         "image": "../images/abs.avif",
         "description": "Model created to assist teams and players in analytical decision making with MLB's ABS Challenge System.",
         "github": "https://github.com/TyAlbao/abs-challenge-demo",
-        "website": "https://medium.com/@tritonball",
+        "website": "https://medium.com/@tritonball/how-teams-should-use-the-abs-system-27a3751220ea",
         "demo": "https://abs-challenge-demo.streamlit.app/"
     },
     {
